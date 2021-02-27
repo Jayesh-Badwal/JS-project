@@ -243,6 +243,7 @@ async function blackjackStand() {
     if(bjGame['isStand']) {
         bjGame['isDeal'] = true;
         bjGame['isHit'] = false;
+        bjGame['isStand'] = false;
         while(DEALER['score'] < YOU['score'] || DEALER['score'] < 21) {
             let card = bjGame["cardList"][Math.floor(Math.random() * 13)];
             if(DEALER['score'] > 21)
@@ -261,7 +262,6 @@ async function blackjackStand() {
 
 function blackjackDeal() {
     if(bjGame['isDeal']) {
-        bjGame['isStand'] = false;
         bjGame['isDeal'] = false;
         bjGame['isHit'] = true;
         let yourImg = document.querySelector("#your-box").querySelectorAll('img');
