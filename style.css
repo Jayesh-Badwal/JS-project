@@ -60,10 +60,6 @@ h2, h3 {
     border: 1px solid black;
 }
 
-#hit, #stand {
-    margin-right: 2;
-}
-
 table, th, td {
     padding: 5px;
     border: 1px solid black;
