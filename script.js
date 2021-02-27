@@ -161,7 +161,7 @@ function buttonReset() {
 function buttonRandom() {
     for(let i = 0; i < allButtons.length; i++) {
         allButtons[i].classList.remove(allButtons[i].classList[1]);
-        allButtons[i].classList.add(copyButtons[Math.floor(Math.random() * 7)]);
+        allButtons[i].classList.add(copyButtons[Math.floor(Math.random() * allButtons.length)]);
     }
 }
 
